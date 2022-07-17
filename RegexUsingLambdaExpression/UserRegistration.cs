@@ -9,16 +9,16 @@ namespace RegexUsingLambdaExpression
 {
     public class UserRegistration
     {
-        public static void CheckFirstName()
+        public static void CheckLastName()
         {
-            Console.WriteLine("Enter your First Name- ");
-            string firstname = Console.ReadLine();
-            string firstnamepattern = @"^[A-Z]{1}[a-z]{2,}$";
+            Console.WriteLine("Enter your Last Name- ");
+            string lastname = Console.ReadLine();
+            string lastnamepattern = @"^[A-Z]{1}[a-z]{2,}$";
 
-            //using lambda expression to validate the first name
-            Func<string, bool> Validfirstname = p => Regex.IsMatch(firstname, firstnamepattern);
+            //using lambda expression to validate the last name
+            Func<string, bool> Validfirstname = p => Regex.IsMatch(lastname, lastnamepattern);
 
-            bool result = Validfirstname(firstname);
+            bool result = Validfirstname(lastname);
             Console.WriteLine(result);
 
 
