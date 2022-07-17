@@ -6,8 +6,8 @@ namespace RegexUsingLambdaExpression
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter the password that should have min 8 characters, atleast 1 UpperCase,1 Numeric Number & 1 special character");
-            UserRegistration.CheckUserPassword();
+           
+            UserRegistration.CheckEmailSample();
         }
     }
 }
