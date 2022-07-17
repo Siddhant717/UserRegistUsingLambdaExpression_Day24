@@ -6,7 +6,7 @@ namespace RegexUsingLambdaExpression
     {
         static void Main(string[] args)
         {
-            UserRegistration.CheckMobileNumber();
+            UserRegistration.CheckUserPassword();
         }
     }
 }
